@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="block">
+                <div class="flex">
+                    <div>
+                        <h1><a href="../../index.html"><img src="../images/logo.jpg"></a></h1>
+                    </div>
+                    <div>
+                        <p id="name"></p>
+                    </div>
+                    <div>
+                        <a href="profile.html">profile</a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <a href="../../index.html">Start seite</a>
+                    </div>
+                    <div>
+                        <a href="rp.html">Reserviere einen Parkplatz oder Raum</a>
+                    </div>
+                    <div>
+                        <a href="rp-admin.html" class="underlined">Admin</a>
+                    </div>
+                    <div>
+                        <a id="login" href="#">Login/Logout</a>
+                        <script src="../controler/login-access.js"></script>
+                    </div>
+                    <div>
+                        <a href="users.html">users Admin</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="left">
+                <h2>Kreiere ein Neues Objekt Hier:</h2>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Position X</td>
+                        <td><input type="number" id="position-x"></td>
+                    </tr>
+                    <tr>
+                        <td>Position Y</td>
+                        <td><input type="number" id="position-y"></td>
+                    </tr>
+                    <tr>
+                        <td>Width</td>
+                        <td><input type="number" id="position-width"></td>
+                    </tr>
+                    <tr>
+                        <td>Lenght</td>
+                        <td><input type="number" id="position-lenght"></td>
+                    </tr>
+                    <tr>
+                        <td><div>.</div></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" id="object-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Parkplatz<input name="type" value="p" type="radio" class="small-input" id="radio-p"> Raum<input name="type" value="r" type="radio" class="small-input" id="radio-r"></td>
+                    </tr>
+                    <tr>
+                        <td><div>.</div></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button id="confirm">Confirm</button></td>
+                    </tr>
+                </table>
+                <br>
+                <table id="tabel-places">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Löschen</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="right">
+                <div class="flex">
+                    <p>Etage</p>
+                    <p id="etage-number">EG</p>
+                    <div class="block">
+                        <button id="etage-up">/\</button>
+                        <button id="etage-down">\/</button>
+                    </div>
+                </div>
+                <canvas id="canvas">
+
+                </canvas>
+            </div>
+        </main>
+        <script src="../controler/rp-admin.js"></script>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-style: normal;
+    font-family: "Graviola-CsBe-regular", "Bahnschrift", Arial, sans-serif;
+    font-size: 20px;
+    border: none;
+    color: black;
+}
+@font-face {
+    font-family: 'Graviola-CsBe-regular';
+    src: url("Graviola/Harbor\ Type\ -\ Graviola-Regular.otf");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graviola-CsBe-light';
+    src: url("Graviola/Harbor\ Type\ -\ Graviola-Light.otf");
+}
+@keyframes appear {
+    0%{
+        top: -500px;
+        background-color: rgba(0, 0, 0, 0);
+        border: 10px solid rgba(0, 0, 0, 0);
+    }
+    100%{
+        top: 0px;
+        background-color: #ffffff;
+        border: 10px solid #E50010;
+    }
+}
+.block, div {
+    display: block;
+}
+.underlined {
+    font-style: normal;
+    color: #E50010;
+}
+h1, h2, h3 {
+    font-size: 30px;
+    font-family: "Graviola-CsBe-light";
+}
+table, th {
+    border: 1px solid;
+    border-collapse: collapse;
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+td {
+    color: #FFFFFF;
+}
+table {
+    width: 99%;
+    margin: 0.5%;
+}
+a, img {
+    padding: 5px;
+}
+body {
+    text-align: center;
+    background-color: #BBBBBB;
+}
+header {
+    background-color: #FFFFFF;
+}
+.flex {
+    display: inline-flex;
+    width: 100%;
+}
+canvas {
+    border: solid#0A0A32;
+    margin: 2px;
+    
+}
+#login {
+    text-align: right;
+}
+main {
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    min-height: 100%;
+}
+.right {
+    width: 55%;
+    text-align: left;
+}
+.left {
+    width: 45%;
+    color: #FFFFFF;
+    background-color: #0A0A32;
+    margin: 10px;
+    overflow-x: auto;
+}
+#etage-number {
+    width: 50px;
+}
+.left h2 {
+    color: #FFFFFF;
+}
+.black-box {
+    width: 90%;
+    margin: 2.5%;
+    padding: 2.5%;
+    background-color: #0A0A32;
+    border-radius: 20px;
+}
+.black-box table {
+    border-color: #0A0A32;
+}
+td h2, td button, .black-box h1, td a, td p {
+    color: #FFFFFF;
+    background-color: #0A0A32;
+}
+input {
+    width: 70%;
+    border: 1px solid #0A0A32;
+}
+.message-and-error {
+    position: fixed;
+    width: 40%;
+    margin-left: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 10px solid #E50010;
+    top: 0px;
+    animation: appear 0.5s;
+}
+.message-and-error h1, .message-and-error p {
+    color: #E50010;
+}
+.small-input {
+    width: 20%;
+    min-width: 150px;
+}
+table button, table a {
+    text-decoration: underline;
+    background-color: rgba(100, 113, 233, 0.1);
+}
+.white {
+    color: #FFFFFF;
+}
+p {
+    display: inline-block;
+}
+canvas {
+    display: block;
+}
+@media (max-width: 700px) {
+    canvas {
+        display: none;
+    }
+}
+@media (max-width: 1300px) {
+    @keyframes appear {
+        0%{
+            top: -500px;
+            background-color: rgba(0, 0, 0, 0);
+            border: 5px solid rgba(0, 0, 0, 0);
+        }
+        100%{
+            top: 0px;
+            background-color: #ffffff;
+            border: 5px solid #E50010;
+        }
+    }
+    .small-input {
+        width: 18%;
+        min-width: 100px;
+    }
+    main {
+        text-align: left;
+        display: block;
+    }
+    .right {
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+        margin: 0px;
+    }
+    .message-and-error {
+        position: fixed;
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 0px;
+        left: 0px;
+        border: 5px solid #E50010;
+    }
+    img {
+        width: 50%;
+    }
+    * {
+        font-size: 15px;
+    }
+    h1, h2, h3 {
+        font-size: 20px;
+    }
+    input {
+        width: 80%;
+    }
+}
+a:hover, button:hover {
+    color: #888888;
+}

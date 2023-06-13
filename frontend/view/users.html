@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="block">
+                <div class="flex">
+                    <div>
+                        <h1><a href="../../index.html"><img src="../images/logo.jpg"></a></h1>
+                    </div>
+                    <div>
+                        <p id="name"></p>
+                    </div>
+                    <div>
+                        <a href="profile.html">profile</a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <a href="../../index.html">Start seite</a>
+                    </div>
+                    <div>
+                        <a href="rp.html">Reserviere einen Parkplatz oder Raum</a>
+                    </div>
+                    <div>
+                        <a href="rp-admin.html">Admin</a>
+                    </div>
+                    <div>
+                        <a id="login" href="#">Login/Logout</a>
+                        <script src="../controler/login-access.js"></script>
+                    </div>
+                    <div>
+                        <a href="users.html" class="underlined">users Admin</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="black-box">
+                <h2 class="white">Registriere einen neuen Benutzer</h2>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input id="username"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Passwort</td>
+                        <td><input id="pwd" type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>
+                            Dozent<input name="type" type="radio" class="small-input">
+                            Sekretariat<input name="type" type="radio" class="small-input" value="S"  id="radio-s">
+                            Admin<input name="type" type="radio" class="small-input" value="A"  id="radio-a">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button id="create-object" class="small-input">Kreieren</button></td>
+                    </tr>
+                </table>
+                <br>
+                <table id="users">
+                    <tr>
+                        <th>Benutzer name</th>
+                        <th>Löschen</th>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <script src="../controler/users.js"></script>
+    </body>
+</html>

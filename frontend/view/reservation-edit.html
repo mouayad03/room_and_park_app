@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="block">
+                <div class="flex">
+                    <div>
+                        <h1><a href="../../index.html"><img src="../images/logo.jpg"></a></h1>
+                    </div>
+                    <div>
+                        <p id="name"></p>
+                    </div>
+                    <div>
+                        <a href="profile.html">profile</a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <a href="../../index.html">Start seite</a>
+                    </div>
+                    <div>
+                        <a href="rp.html" class="underlined">Reserviere einen Parkplatz oder Raum</a>
+                    </div>
+                    <div>
+                        <a href="rp-admin.html">Admin</a>
+                    </div>
+                    <div>
+                        <a id="login" href="#">Login/Logout</a>
+                        <script src="../controler/login-access.js"></script>
+                    </div>
+                    <div>
+                        <a href="users.html">users Admin</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="black-box">
+                <h1>Edit A Reservation</h1>
+                <table>
+                    <tr>
+                        <td><h2>Host:</h2></td>
+                        <td><h2 id="host"></h2></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Datum:</h2></td>
+                        <td><h2>Von: <input class="small-input" id="date-from" type="date"><input class="small-input" id="time-from" type="time"> Bis: <input class="small-input" id="date-to" type="date"><input class="small-input" id="time-to" type="time"></h2></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Reservierungs Ort:</h2></td>
+                        <td><h2><input id="place"></h2></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Warum Reservieren sie diesen Ort, beschreiben sie?</h2></td>
+                        <td><h2><textarea id="description"></textarea></h2></td>
+                    </tr>
+                    <tr>
+                        <td><p id="type"></p></td>
+                        <td><p id="message"></p></td>
+                    </tr>
+                    <tr>
+                        <td><button id="confirm">CONFIRM</button></td>
+                        <td><button id="cancel">CANCEL</button></td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <script src="../controler/reservation-edit.js"></script>
+    </body>
+</html>

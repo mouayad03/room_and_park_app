@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="frontend/style/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="block">
+                <div class="flex">
+                    <div>
+                        <h1><a href="#"><img src="frontend/images/logo.jpg"></a></h1>
+                    </div>
+                    <div>
+                        <p id="name"></p>
+                    </div>
+                    <div>
+                        <a href="frontend/view/profile.html">profile</a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <a href="#" class="underlined">Start seite</a>
+                    </div>
+                    <div>
+                        <a href="frontend/view/rp.html">Reserviere einen Parkplatz oder Raum</a>
+                    </div>
+                    <div>
+                        <a href="frontend/view/rp-admin.html">Admin</a>
+                    </div>
+                    <div>
+                        <a id="login" href="#">Login/Logout</a>
+                        <script src="frontend/controler/login-access.js"></script>
+                    </div>
+                    <div>
+                        <a href="frontend/view/users.html">users Admin</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="left">
+                <h2>Schon Reservierte Orte:</h2>
+                <table id="tabel-reservations">
+                    <tr>
+                        <th>Name</th>
+                        <th>Datum</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="right">
+                <h1>Hier Ist eine Hilfestellung wie sie sich in dieser Webseite Orientieren können</h1>
+
+                <h2>Die Navigation</h2>
+                <br>
+                <p>
+                    <p>Oben gibt es 4 Links:</p>
+                    <br>
+                    <li>
+                        "Startseite" Hier Befinden wir uns jetzt gerade.
+                    </li>
+                    <br>
+                    <li>
+                        "Reserviere eine Parkplatz oder Raum"
+                        Hier kann eine Reservation Gemacht,
+                        Gelöscht, bearbeitet Auf einer Liste
+                        sehen und auch auf eine Karte die Position
+                        dieses Raumes oder parkplatzes Ansehen.
+                    </li>
+                    <br>
+                    <li>
+                        "Admin" Hier können Admins Neue Räume und parkplätze Machen.
+                    </li>
+                    <br>
+                    <li>
+                        "Login/Logout" Hier kann man sich anmelden. Falls man schon
+                        angemeldet ist kann man sich hier wieder aus Loggen.
+                        Die Anmeldung ist nur für 1/2 Stunde Gültig.
+                    </li>
+                    <br>
+                    <p>
+                        Oben neben dem logo wo "Bitte Logen sie sich Ein!" Steht.
+                        Wird deine Rolle wie auch dein namen stehen wenn du dich auch
+                        angemeldest hast.
+                    </p>
+                </p>
+                <br>
+                <h2>Was sind die Verschiedensten sachen die du Machen kannst?</h2>
+                <br>
+                <li>
+                    Du Kannst Reservationen die schon existieren auf der linken seite dieser webseite einsehen. 
+                </li>
+                <br>
+
+
+
+
+
+                <script src="frontend/controler/start-site.js"></script>
+            </div>
+        </main>
+    </body>
+</html>

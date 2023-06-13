@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="block">
+                <div class="flex">
+                    <div>
+                        <h1><a href="../../index.html"><img src="../images/logo.jpg"></a></h1>
+                    </div>
+                    <div>
+                        <p id="name"></p>
+                    </div>
+                    <div>
+                        <a href="profile.html">profile</a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <a href="../../index.html">Start seite</a>
+                    </div>
+                    <div>
+                        <a href="rp.html" class="underlined">Reserviere einen Parkplatz oder Raum</a>
+                    </div>
+                    <div>
+                        <a href="rp-admin.html">Admin</a>
+                    </div>
+                    <div>
+                        <a id="login" href="#">Login/Logout</a>
+                        <script src="../controler/login-access.js"></script>
+                    </div>
+                    <div>
+                        <a href="users.html">users Admin</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="left">
+                <div>
+                    <h2>Gib einen Raum/host namen oder datum hier ein um es zu finden</h2>
+                    <p class="white">Stellen sie sicher das der Name zu 100% stimmt oder es funktioniert nicht</p>
+                    <input id="search-input">
+                    <button id="search-button">Suchen</button>
+                </div>
+                <br>
+                <h2>Schon Reservierte Orte:</h2>
+                <table id="tabel-reservations">
+                    <tr>
+                        <th>Name</th>
+                        <th>Besetztungen</th>
+                        <th>Löschen</th>
+                        <th>Bearbeiten</th>
+                        <th>Reservieren</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="right">
+                <div class="flex">
+                    <p>Etage</p>
+                    <p id="etage-number">EG</p>
+                    <div class="block">
+                        <button id="etage-up">/\</button>
+                        <button id="etage-down">\/</button>
+                    </div>
+                </div>
+                <canvas id="canvas">
+
+                </canvas>
+            </div>
+        </main>
+        <script src="../controler/rp.js"></script>
+    </body>
+</html>
